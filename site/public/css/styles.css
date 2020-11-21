@@ -1,3 +1,4 @@
+/*Estilos generales*/
 *{
     box-sizing: border-box;
 }
@@ -11,6 +12,10 @@ body{
     align-items: center;
     font-family: sans-serif;
 }
+
+/*Estilos Menú*/
+
+/*Estilos Index*/
 
 .logo{
     width: 90vw;
@@ -102,3 +107,13 @@ footer div p{
 footer div .icon-footer{
     width: 1.5rem;
 }
+
+/*Estilos register*/
+
+/*Estilos resume*/
+
+/*Estilos create*/
+
+/*Estilos send*/
+
+/*Estilos end*/
