@@ -1,11 +1,13 @@
 const $btnMenu = document.querySelector('#btn-menu');
 
 const $options = document.querySelector('#options-menu');
-console.log($options);
+
+const $contentToHidden = document.querySelector('.main-send');
 
 function desplegarMenu(){
     $options.classList.toggle('desplegado');
     $options.classList.toggle('oculto')
+    $contentToHidden.classList.toggle('oculto')
 }
 
 $btnMenu.addEventListener("click", desplegarMenu);

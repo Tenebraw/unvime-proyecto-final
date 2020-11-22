@@ -13,6 +13,12 @@ body{
     font-family: sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Estilos Menú*/
 
 header{
@@ -31,12 +37,12 @@ header .content-icon button{
 }
 
 header .content-icon button i{
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #F8F4F4;
 }
 
 header .content-icon img{
-    width: 3rem;
+    width: 1.5rem;
 }
 
 header .content-options{
@@ -45,7 +51,9 @@ header .content-options{
     align-items: center;
     position: absolute;
     width: 100vw;
-    background: red;
+    background: #626161;
+    height: 100%;
+    padding: 2rem 0;
 }
 
 .oculto{
@@ -65,7 +73,8 @@ header .content-options{
 header .content-options a{
     color: #F8F4F4;
     text-decoration: none;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+    font-size: 1.3rem;
 }
 
 header .content-options a:hover{
@@ -173,5 +182,89 @@ footer div .icon-footer{
 /*Estilos create*/
 
 /*Estilos send*/
+
+.menu-opciones{
+    margin-bottom: 1rem;
+}
+
+.menu-opciones button{
+    border: none;
+    padding: 1.2rem;
+    background: #c4c4c4;
+}
+
+.menu-opciones button a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Verificar estilo general- creo debería serlo*/
+.main-send {
+    width: 80vw;
+    text-align: center;
+}
+
+.main-send p{
+    color: #F8F4F4;
+    margin-bottom: 0.2rem;
+}
+
+.main-send .content-share{
+    margin-bottom: 1rem;
+}
+
+.main-send .content-share form{
+    display: flex;
+}
+
+.main-send .content-share form input{
+    background: #c4c4c4;
+    /* height: 3rem; */
+    line-height: 2rem;
+    margin: 0 0.5rem;
+    padding: 0 0.2rem;
+    color: #000000;
+    border: none;
+    border-left: solid 0.3rem red;
+}
+
+.main-send .content-social-networks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-width: 160px;
+}
+
+.main-send .content-social-networks a{
+    width: 30%;
+    text-align: center;
+    margin: 0.2rem 0;
+}
+
+.main-send .content-social-networks a i{
+    color: #000000;
+    font-size: 2rem;
+}
+
+.main-send .content-qr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.main-send .content-qr i{
+    font-size: 5rem;
+    margin: 1rem;
+}
+
+.main-send .content-qr p{
+    width: 50vw;
+    color: #626161;
+}
 
 /*Estilos end*/
