@@ -15,8 +15,66 @@ body{
 
 /*Estilos Menú*/
 
-/*Estilos Index*/
+header{
+    width: 100vw;
+}
 
+header .content-icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header .content-icon button{
+    background: none;
+    border: none;
+}
+
+header .content-icon button i{
+    font-size: 2rem;
+    color: #F8F4F4;
+}
+
+header .content-icon img{
+    width: 3rem;
+}
+
+header .content-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    background: red;
+}
+
+.oculto{
+    position: relative;
+    left: -100vw;
+    height: 0;
+}
+
+.desplegado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    transition: all 500ms ease;
+}
+
+header .content-options a{
+    color: #F8F4F4;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+header .content-options a:hover{
+    padding: 1rem;
+    background: #81AA7A;
+    border-radius: 0.3rem;
+}
+
+/*Estilos Index*/
 .logo{
     width: 90vw;
 }
