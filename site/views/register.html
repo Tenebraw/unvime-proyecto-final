@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Register</title>
 </head>
+
 <body>
-    <h1>El registro</h1>
+    <img src="img\logo-unvime.png" class="logo">
+    <h1 class="title">Sistema de Encuestas v1.0</h1>
+    <form class="form-login">
+        <div class="content-inputs">
+            <label for="userName">Nombre de usuario</label>
+            <div class="container-icon">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="userName" placeholder="pepito">
+            </div>
+        </div>
+        <div class="content-inputs">
+            <label for="email">Email</label>
+            <div class="container-icon">
+                <i class="fas fa-at icon"></i>
+                <input type="email" name="email" placeholder="email">
+            </div>
+        </div>
+        <div class="content-inputs">
+            <label for="password">Password</label>
+            <div class="container-icon">
+                <i class="fas fa-unlock icon"></i>
+                <input type="password" name="password" placeholder="xxxxxxx">
+            </div>
+        </div>
+        <div class="content-inputs">
+            <label for="password">Confirmar contraseña</label>
+            <div class="container-icon">
+                <i class="fas fa-unlock icon"></i>
+                <input type="password" name="Confirmar" placeholder="xxxxxxx">
+            </div>
+        </div>
+        <div class="content-inputs">
+            <label for="profesion"></label>
+            <select name="profesion" id="profesion">
+                <option value="estudiante">Soy estudiante</option>
+                <option value="profesor">Soy profesor</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+    <footer>
+        <div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2948/2948253.svg" alt="icon location" class="icon-footer">
+            <p>Las Heras N° 383 Villa Mercedes</p>
+        </div>
+        <div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2948/2948253.svg" alt="icon location" class="icon-footer">
+            <p>Telefono: 02657-422154</p>
+        </div>
+        <div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2948/2948253.svg" alt="icon location" class="icon-footer">
+            <p>Oficina de Alumnos: 02657 - 428088</p>
+        </div>
+        <div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2948/2948253.svg" alt="icon location" class="icon-footer">
+            <p>paginaunvime@unvime.edu.ar</p>
+        </div>
+        <p>@Copyright Unvime 2020</p>
+    </footer>
 </body>
+
 </html>

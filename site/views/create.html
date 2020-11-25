@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Create</title>
 </head>
+
 <body>
-    <h1>Crear encuesta</h1>
+    <header>
+        <div class="content-icon">
+            <button id="btn-menu"><i class="fas fa-bars"></i></button>
+            <img src="img/logo2.png" alt="logo">
+        </div>
+        <div class="content-options oculto" id="options-menu">
+            <a href="#">Mi cuenta</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Contacto</a>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+    </header>
+    <main class="main-create">
+        <div class="menu-opciones-create">
+            <button class="b-active"><a href="#">Crear</a></button>
+            <button><a href="#">Enviar</a></button>
+            <button><a href="#">Fin</a></button>
+        </div>
+        <div class="logo">
+            <button class="addbutton">Añadir Logo</button>
+        </div>
+        <form action="">
+            <div class="content-create">
+                <input type="text" value="" class="name">
+                <label for="nombreEncuesta">Nombre de la Encuesta...</label>
+            </div>
+            <div class="content-create">
+                <textarea type="text" value="" class="description"></textarea>
+                <label for="nameDescription">Descripcion...</label>
+            </div>
+            <div class="content-create">
+                <textarea type="text" value="" class="question"></textarea>
+                <label for="namePregunta">Introduzca su pregunta...</label>
+            </div>
+            <div class="menu-extra">
+                <button class="addquestion"><a href="#">Añadir una pregunta+</a></button>
+                <button class="preview"><a href="#">Vista Previa</a></button>
+                <button class="endsurvey"><a href="#">Terminar Encuesta</a></button>
+            </div>
+
+
+        </form>
+
+
+
+    </main>
+
+
+
+
+
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

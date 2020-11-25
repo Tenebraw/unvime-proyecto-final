@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Resume</title>
 </head>
+
 <body>
-    <h1>Crear nuevos proyectos</h1>
+    <header>
+        <div class="content-icon">
+            <button id="btn-menu"><i class="fas fa-bars"></i></button>
+            <img src="img/logo2.png" alt="logo">
+        </div>
+        <div class="content-options oculto" id="options-menu">
+            <a href="#">Mi cuenta</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Contacto</a>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+    </header>
+    <div class="topbar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Buscar titulo o etiqueta">
+    </div>
+    <div class="main-resume">
+        <div class="btn-project">
+            <button><a href="#">+ Nuevo Projecto</a></button>
+        </div>
+        <div class="survey-reciente">
+            <label>Reciente</label>
+        </div>
+        <div class="survey">
+            <label id="btn-menu-survey">Encuesta N° 1</label><br>
+            <label class="description-survey">Lanzada el 25 Noviembre 2020. 10 respuestas.</label>
+            <div class="survey-options ocult" id="survey-menu">
+                <div class="row">
+                    <div class="column">
+                        <div class="container-icon-survey">
+                            <i class="fas fa-edit icon"></i>
+                            <a href="#">Editar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-trash-alt icon"></i>
+                            <a href="#">Eliminar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-paper-plane icon"></i>
+                            <a href="#">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="container-icon-survey">
+                            <i class="fas fa-eraser icon"></i>
+                            <a href="#">Limpiar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-poll icon"></i>
+                            <a href="#">Resultados</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-window-close icon"></i>
+                            <a href="#" onclick="cerrarMenu();return false;">Cerrar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="survey">
+            <label id="btn-menu-survey2">Encuesta N° 2</label><br>
+            <label class="description-survey">Lanzada el 1 de Junio 2019. 19 respuestas.</label>
+            <div class="survey-options ocult" id="survey-menu2">
+                <div class="row">
+                    <div class="column">
+                        <div class="container-icon-survey">
+                            <i class="fas fa-edit icon"></i>
+                            <a href="#">Editar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-trash-alt icon"></i>
+                            <a href="#">Eliminar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-paper-plane icon"></i>
+                            <a href="#">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="container-icon-survey">
+                            <i class="fas fa-eraser icon"></i>
+                            <a href="#">Limpiar</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-poll icon"></i>
+                            <a href="#">Resultados</a>
+                        </div>
+                        <div class="container-icon-survey">
+                            <i class="fas fa-window-close icon"></i>
+                            <a href="#" onclick="cerrarMenu2();return false;">Cerrar</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
 </body>
+
 </html>
