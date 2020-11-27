@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Create</title>
 </head>
 
@@ -31,7 +33,7 @@
         <div class="logo">
             <button class="addbutton">Añadir Logo</button>
         </div>
-        <form action="">
+        <form action="" id="form-encuesta">
             <div class="content-create">
                 <input type="text" value="" class="name">
                 <label for="nombreEncuesta">Nombre de la Encuesta...</label>
@@ -40,12 +42,15 @@
                 <textarea type="text" value="" class="description"></textarea>
                 <label for="nameDescription">Descripcion...</label>
             </div>
-            <div class="content-create">
+            <!--<div id="questions">-->
+            <div class="content-create" id="namePregunta0">
                 <textarea type="text" value="" class="question"></textarea>
                 <label for="namePregunta">Introduzca su pregunta...</label>
             </div>
+            <!--</div>-->
+
             <div class="menu-extra">
-                <button class="addquestion"><a href="#">Añadir una pregunta+</a></button>
+                <button class="addquestion" onclick="nuevaPregunta()"><a href="#">Añadir una pregunta+</a></button>
                 <button class="preview"><a href="#">Vista Previa</a></button>
                 <button class="endsurvey"><a href="#">Terminar Encuesta</a></button>
             </div>
@@ -56,12 +61,8 @@
 
 
     </main>
-
-
-
-
-
     <script src="js/menu.js"></script>
+    <script src="js/create.js"></script>
 </body>
 
 </html>
