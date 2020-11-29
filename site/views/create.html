@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--La siguiente linea es necesaria para no obtener el mensaje de error "get favicon"-->
+    <link rel="shortcut icon" href="#" />
     <title>Create</title>
 </head>
 
@@ -35,7 +37,22 @@
         </div>
         <form action="" id="form-encuesta">
             <div class="content-create">
-                <input type="text" value="" class="name">
+                <div class="insidemenu">
+                    <div id="firstcolumnmenu">
+                        <ul id="accordion">
+                            <li>
+                                <button class="btn"><i class="fas fa-bars"></i></button>
+                                <ul class="hid">
+                                    <li><a href="">Editar</a></li>
+                                    <li><a href="">Copiar</a></li>
+                                    <li><a href="">Eliminar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="text" value="" class="name">
+                </div>
+
                 <label for="nombreEncuesta">Nombre de la Encuesta...</label>
             </div>
             <div class="content-create">
@@ -45,6 +62,22 @@
             <!--<div id="questions">-->
             <div class="content-create" id="namePregunta0">
                 <textarea type="text" value="" class="question"></textarea>
+                <div class="test">
+                    <div class="dropdown">
+                        <button onclick="tipoPreguntas()" class="dropbtn">Tipo</button>
+                        <i class="fas fa-sort-down icon"></i>
+                        <div id="myDropdown" class="dropdown-content">
+                            <ul>
+                                <li><a href="">Multiple-choice (simple)</a></li>
+                                <li><a href="">Multiple-choice (multiple)</a></li>
+                                <li><a href="">Menu Desplegable</a></li>
+                                <li><a href="">Escala Opinion</a></li>
+                                <li><a href="">Pregunta Abierta</a></li>
+                                <li><a href="">Formulario de Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <label for="namePregunta">Introduzca su pregunta...</label>
             </div>
             <!--</div>-->
@@ -54,12 +87,7 @@
                 <button class="preview"><a href="#">Vista Previa</a></button>
                 <button class="endsurvey"><a href="#">Terminar Encuesta</a></button>
             </div>
-
-
         </form>
-
-
-
     </main>
     <script src="js/menu.js"></script>
     <script src="js/create.js"></script>
